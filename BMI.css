@@ -1,12 +1,11 @@
 #main-div{
-    height: 250px;
+    min-height: 250px;
     color: white;
     text-align: center;
-    margin-top: 50px;
     border-color: none;
     padding: 30px;
-    margin-left: 400px;
-    margin-right: 400px;
+    max-width: 600px;
+    margin: auto;
     border-radius: 5px;
     background-color: #0D92F4;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -36,10 +35,86 @@
 }
 
 
-/* #comment-div{
-    border: 2px solid black;
-    margin: 10px 10px 10px;
-    padding: 1px 1px;
-    margin-right: 50px;
 
-} */
+.results{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) scale(0.95);
+    transition: opacity 0.5s ease,
+    transfrom 0.5s ease,
+    visibility 0s linear 0.5s;
+}
+
+.results.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    transition-delay: 0s;
+}
+
+
+li{
+    list-style: none;
+}
+
+.under{
+    background-color: rgba(254, 167, 5, 0.874);
+    border-radius: 2px 2px;
+}
+
+.normal{
+    border-radius: 2px 2px;
+    background-color: rgb(22, 238, 6);
+}
+
+.over{
+    border-radius: 2px 2px;
+    background-color: #f60449;
+}
+
+.obese{
+    border-radius: 2px 2px;
+    background-color: red;
+}
+
+.input-value:focus{
+    outline: none;
+    
+    border: 2px solid #ffc107;
+    background-color: #eaf6ff;
+}
+
+#comment-id{
+    font-weight: bold;
+    background-color: #eaf6ff;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+#bmi-info{
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    color: #f7eeee;
+}
+
+#bmi-info ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+#bmi-info li{
+ margin-bottom: 4px;
+}
+
+h4{
+    background-color: rgb(59, 57, 57);
+    max-width: 150px;
+    margin: auto;
+    border-radius: 2px;
+}
+
+li, span{
+    font-weight: bold;
+}

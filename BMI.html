@@ -12,12 +12,12 @@
         <div id="main-div">
             <h3>BMI CALCULATOR</h2>
             <div id="input-div">
-                <label for="height">Height:</label>
+                <label for="height">Height(m):</label>
                 <input class="input-value" id="height" type="number" min="0" placeholder="Enter height in metre" required>
-                <label for="weight">Weight:</label>
+                <label for="weight">Weight(kg):</label>
                 <input class="input-value" id="weight" type="number" min="0" placeholder="Enter weight in kilogram" required>
             </div>
-    <div id="results-div">
+    <div id="results" class="results hide">
         <div id="output-div">
             <p>Body Mass Index: <span id="bodymass-id"></span></p>
         </div>
@@ -25,6 +25,16 @@
         <div id="comment-div">
             <p>Comment: <span id="comment-id"></span></p>
         </div>
+    </div>
+
+    <div id="bmi-info" class="bmi-info">
+        <h4>BMI Categories</h4>
+        <ul>
+            <li class="under"><span class="range">Underweight</span>: &lt; 18.5</li>
+            <li class=" normal"><span class="range">Normal</span>: 18.5 - 24.9</li>
+            <li class=" over"><span class="range">Overweight</span>: 25 - 29.9</li>
+            <li class="obese"><span class="range">Obese</span>: 30 and above</li>
+        </ul>
     </div>
             
     <hr>
